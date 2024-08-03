@@ -12,7 +12,7 @@
 		"build": "gulp build --build",
 		"sprite": "gulp sprite",
 		"fonts": "gulp fonts --rewrite",
-		"deploy": "gulp deployFTP --build",
+		"deploy": "npm run build && cp -r dist/ docs/",
 		"zip": "gulp deployZIP --build",
 		"devbuild": "gulp build --build --nowebp",
 		"noimgbuild": "gulp build --build --noimgopt",
