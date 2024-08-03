@@ -1,0 +1,29 @@
+//<BUTTONS (a.btn+tab)>
+// Сніппет (HTML): btn
+
+.button {
+	display: inline-flex;
+    text-transform: uppercase;
+    color: #fff;
+	line-height: 127%;
+	background-color: var(--bg-green);
+	transition: background-color 0.3s;
+	
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: var(--bg-green-hover);
+		}
+	}
+	&--blue {
+		background-color: var(--bg-blue);
+		&:hover {
+			background-color: var(--bg-blue-hover);
+		}
+	}
+	&--fw {
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+}

@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  @@include('html/_head.htm',{ "title":"Contacts" })
+  <body>
+    <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page-contacts">
+        <section class="page-contacts__hero hero">
+          <div class="hero__container">
+            <div
+              class="hero__section-header section-header section-header--center"
+            >
+              <h1
+                class="section-header__title section-header__title--big section-header__title--white"
+              >
+                Contact
+              </h1>
+            </div>
+          </div>
+          <div class="hero__image-ibg">
+            <img src="@img/contacts/bg.jpg" alt="Image" />
+          </div>
+        </section>
+        <div class="page-contacts__doctors doctors-contacts">
+          <div class="doctors-contacts__container">
+            <article class="doctors-contacts__item">
+              <div class="doctors-contacts__avatar-ibg">
+                <img src="@img/contacts/doctors/01.jfif" alt="Image" />
+              </div>
+              <div class="doctors-contacts__body">
+                <h4 class="doctors-contacts__title">Close to the Client</h4>
+                <div class="doctors-contacts__text text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                  elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
+                  leo.
+                </div>
+              </div>
+            </article>
+            <article class="doctors-contacts__item">
+              <div class="doctors-contacts__avatar-ibg">
+                <img src="@img/contacts/doctors/02.jfif" alt="Image" />
+              </div>
+              <div class="doctors-contacts__body">
+                <h4 class="doctors-contacts__title">Attention to Detail</h4>
+                <div class="doctors-contacts__text text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                  elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
+                  leo.
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <section class="contact-us">
+          <div class="contact-us__container">
+            <div class="contact-us__content">
+              <div class="contact-us__section-header section-header">
+                <div class="section-header__label section-header__label--blue">
+                  CONTACT US
+                </div>
+                <h2 class="section-header__title">
+                  Get In Touch
+                </h2>
+                <div
+                  class="section-header__text section-header__text--left text">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus et metus augue. Mauris ut libero eget erat
+                    scelerisque vehicula. Phasellus nec blandit metus. Nulla
+                    quis molestie risus.
+                  </p>
+                </div>
+                <a href="#" class="section-header__button button">VIEW PRICES</a></div>
+            </div>
+            <form action="#" class="contact-us__form form">
+              <div class="form__line">
+                <input data-required autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="Name" class="form__input input" >
+              </div>
+              <div class="form__line">
+                <input data-required autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="Email" class="form__input input">
+              </div>
+              <div class="form__line">
+              <textarea autocomplete="off" name="form[]" placeholder="Message" class="form__input input"></textarea>
+              </div>
+              <div class="form__line">
+                <button type="submit" class="form__button button button--fw">SEND</button>
+              </div>
+            </form>
+          </div>
+
+        </section>
+        <div class="map">
+         
+          <div class="map__container">
+          <div class="map__info info-map">
+           <div class="info-map__title">Contacts</div>
+           <ul class="info-map__list">
+            <li class="info-map__item">
+              <a href="#" class="info-map__link info-map__link--address">111 8th Ave, New York U.S.A.</a>
+            </li>
+            <li class="info-map__item">
+              <a href="tel:+12025550153" class="info-map__link info-map__link--phone">Ph +1-202-555-0153</a>
+            </li>
+            <li class="info-map__item">
+              <a href="mailto:info@site.com" class="info-map__link info-map__link--mail">info@site.com</a>
+            </li>
+           </ul>
+           <a href="#" class="info-map__button button button--blue button--fw">ABOUT US</a>
+          </div>
+        </div>
+        <div class="map__body">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158858.58519668315!2d-0.2664051595239944!3d51.52852620095037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2z0JvQvtC90LTQvtC9LCDQktC10LvQuNC60L7QsdGA0LjRgtCw0L3QuNGP!5e0!3m2!1sru!2sua!4v1705592799837!5m2!1sru!2sua" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+      </main>
+      @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_js.htm',{})
+  </body>
+</html>
