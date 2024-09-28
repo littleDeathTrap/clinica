@@ -5,6 +5,7 @@
 	"author": "FLS",
 	"private": true,
 	"license": "",
+	"homepage": "https://littledeathtrap.github.io/clinica/",
 	"type": "module",
 	"scripts": {
 		"start": "npm i --legacy-peer-deps",
