@@ -7,8 +7,8 @@
 // Підключаємо слайдер Swiper з node_modules
 // При необхідності підключаємо додаткові модулі слайдера, вказуючи їх у {} через кому
 // Приклад: { Navigation, Autoplay }
-import Swiper from "swiper";
-import { Navigation, Pagination, EffectFade, Autoplay } from "swiper/modules";
+import Swiper from 'swiper';
+import { Navigation, Pagination, EffectFade, Autoplay } from 'swiper/modules';
 /*
 Основні модулі слайдера:
 Navigation, Pagination, Autoplay, 
@@ -49,6 +49,7 @@ function initSliders() {
 
 			// Ефекти
 			effect: 'fade',
+			crossFade: true,
 			autoplay: {
 				delay: 3000,
 				disableOnInteraction: false,

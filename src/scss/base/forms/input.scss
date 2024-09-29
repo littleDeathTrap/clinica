@@ -12,23 +12,20 @@ textarea {
 	border: 1px solid #f1f1f1;
 	background-color: #fff;
 
-
 	border-radius: 0 !important;
 	width: 100%;
-	font-size: rem(16);
-	letter-spacing: rem(1);
+	font-size: toRem(16);
+	letter-spacing: toRem(1);
 	color: #fff;
 	display: block;
-	min-height: rem(42);
-	padding: rem(10) rem(20);
-
+	min-height: toRem(42);
+	padding: toRem(0) toRem(20);
 	&._form-focus {
 	}
 	&._form-error {
-		border-bottom: rem(1) solid red;
+		border-bottom: toRem(1) solid red;
 	}
 	&::placeholder {
-		
 	}
 }
 .input[placeholder]:not([data-placeholder-nohiden]) {
@@ -41,6 +38,7 @@ textarea {
 }
 
 textarea.input {
-	resize: none;
-	padding: rem(10) rem(20);
+	resize: vertical;
+	min-height: toRem(142);
+	padding: toRem(12) toRem(20);
 }

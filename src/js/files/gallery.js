@@ -16,10 +16,10 @@ import lightGallery from 'lightgallery';
 // Плагіни
 // lgZoom, lgAutoplay, lgComment, lgFullscreen, lgHash, lgPager, lgRotate, lgShare, lgThumbnail, lgVideo, lgMediumZoom
 // import lgThumbnail from 'lightgallery/plugins/thumbnail/lg-thumbnail.min.js'
-//import lgZoom from 'lightgallery/plugins/zoom/lg-zoom.min.js'
+// import lgZoom from 'lightgallery/plugins/zoom/lg-zoom.min.js'
 
 // Базові стилі
-import '@scss/libs/gallery/lightgallery.scss';
+// import '@scss/libs/gallery/lightgallery.scss';
 // Стилі доповнень
 // import '@scss/libs/gallery/lg-thumbnail.scss';
 // import '@scss/libs/gallery/lg-video.scss';
@@ -34,7 +34,7 @@ import '@scss/libs/gallery/lightgallery.scss';
 // import '@scss/libs/gallery/lg-relative-caption.scss';
 
 // Усі стилі
- import '@scss/libs/gallery/lightgallery-bundle.scss';
+import '@scss/libs/gallery/lightgallery-bundle.scss';
 
 // Запуск
 const galleries = document.querySelectorAll('[data-gallery]');

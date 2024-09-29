@@ -1,4 +1,4 @@
-// Підключення функціоналу
+// Підключення функціоналу 
 import { isMobile, FLS } from "./functions.js";
 // Підключення списку активних модулів
 import { flsModules } from "./modules.js";

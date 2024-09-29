@@ -1,8 +1,7 @@
 // Модуль попапів
-// Документація по роботі у шаблоні: https://template.fls.guru/template-docs/funkcional-popup.html
 // Сніппет (HTML): pl
 
-// Підключення функціоналу 
+// Підключення функціоналу
 import { isMobile, bodyLockStatus, bodyLock, bodyUnlock, bodyLockToggle, FLS } from "../files/functions.js";
 import { flsModules } from "../files/modules.js";
 

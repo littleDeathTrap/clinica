@@ -1,314 +1,227 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  @@include('html/_head.htm',{ "title":"Shop" })
-  <body>
-    <div class="wrapper">
-      @@include('html/_header.htm',{})
-      <main class="page-shop">
-        <section class="page-shop__hero hero">
-          <div class="hero__container">
-            <div
-              class="hero__section-header section-header section-header--center">
-              <h1 class="section-header__title section-header__title--big section-header__title--white">
-                Our Shop
-              </h1>
-              <div class="section-header__text section-header__text--white text">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                  orci nisl, tempus ut sem a, scelerisque sollicitudin arcu.
-                  Phasellus porttitor dignissim nisl, vel aliquet enim.
-                </p>
-              </div>
-
-              <a href="#" class="section-header__button button">BUY NOW</a>
-            </div>
-            <div class="hero__products products-hero">
-              <article class="products-hero__item item-product">
-                <a href="#" class="item-product__body">
-                  <div class="item-product__price item-product__price--blue">
-                    $ 19
-                  </div>
-                  <div class="item-product__image-ibg-contain">
-                    <img src="@img/home/products/01.jpg" alt="Image" />
-                  </div>
-                  <h4 class="item-product__name">SOAP</h4>
-                </a>
-                <div class="item-product__info info-product">
-                  <div class="info-product__title">SHOP INFO</div>
-                  <ul class="info-product__list">
-                    <li class="info-product__item">
-                      <a href="#" class="info-product__link"
-                        >Terms and Conditions</a
-                      >
-                    </li>
-                    <li class="info-product__item">
-                      <a href="#" class="info-product__link"
-                        >Services and Returns</a
-                      >
-                    </li>
-                    <li class="info-product__item">
-                      <a href="#" class="info-product__link"
-                        >Solidarity Gifts</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </article>
-              <article class="products-hero__item item-product">
-                <a href="#" class="item-product__body">
-                  <div class="item-product__price item-product__price--green">
-                    $ 19
-                  </div>
-                  <div class="item-product__image-ibg-contain">
-                    <img src="@img/home/products/02.jpg" alt="Image" />
-                  </div>
-                  <h4 class="item-product__name">SOAP</h4>
-                </a>
-                <div class="item-product__info info-product">
-                  <div class="info-product__title">SHOP INFO</div>
-                  <ul class="info-product__list">
-                    <li class="info-product__item">
-                      <a href="#" class="info-product__link"
-                        >Terms and Conditions</a
-                      >
-                    </li>
-                    <li class="info-product__item">
-                      <a href="#" class="info-product__link"
-                        >Services and Returns</a
-                      >
-                    </li>
-                    <li class="info-product__item">
-                      <a href="#" class="info-product__link"
-                        >Solidarity Gifts</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </article>
-              <article class="products-hero__item item-product">
-                <a href="#" class="item-product__body">
-                  <div class="item-product__price item-product__price--green">
-                    $ 19
-                  </div>
-                  <div class="item-product__image-ibg-contain">
-                    <img src="@img/home/products/03.jpg" alt="Image" />
-                  </div>
-                  <h4 class="item-product__name">SOAP</h4>
-                </a>
-                <div class="item-product__info info-product">
-                  <div class="info-product__title">SHOP INFO</div>
-                  <ul class="info-product__list">
-                    <li class="info-product__item">
-                      <a href="#" class="info-product__link"
-                        >Terms and Conditions</a
-                      >
-                    </li>
-                    <li class="info-product__item">
-                      <a href="#" class="info-product__link"
-                        >Services and Returns</a
-                      >
-                    </li>
-                    <li class="info-product__item">
-                      <a href="#" class="info-product__link"
-                        >Solidarity Gifts</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </article>
-              <article class="products-hero__item item-product">
-                <a href="#" class="item-product__body">
-                  <div class="item-product__price item-product__price--blue">
-                    $ 19
-                  </div>
-                  <div class="item-product__image-ibg-contain">
-                    <img src="@img/home/products/04.jpg" alt="Image" />
-                  </div>
-                  <h4 class="item-product__name">SOAP</h4>
-                </a>
-                <div class="item-product__info info-product">
-                  <div class="info-product__title">SHOP INFO</div>
-                  <ul class="info-product__list">
-                    <li class="info-product__item">
-                      <a href="#" class="info-product__link"
-                        >Terms and Conditions</a
-                      >
-                    </li>
-                    <li class="info-product__item">
-                      <a href="#" class="info-product__link"
-                        >Services and Returns</a
-                      >
-                    </li>
-                    <li class="info-product__item">
-                      <a href="#" class="info-product__link"
-                        >Solidarity Gifts</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="hero__image-ibg">
-            <img src="@img/shop/hero/bg.jpg" alt="Image" />
-          </div>
-        </section>
-
-        <section class="page-shop__promotions shop-promotions">
-          <div class="shop-promotions__container">
-            <div
-              class="shop-promotions__section-header section-header section-header--center"
-            >
-              <div class="section-header__label section-header__label--blue">
-                MONTHLY SALE
-              </div>
-              <h2 class="section-header__title">Daily Promotions</h2>
-            </div>
-            <div class="shop-promotions__items">
-              <article class="shop-promotions__item item-shop-promotions">
-                <a href="#" class="item-shop-promotions__image-ibg-contain">
-                  <img src="@img/shop/promotions/products/01.jpg" alt="Image" />
-                </a>
-                <div class="item-shop-promotions__body">
-                  <h4 class="item-shop-promotions__title">
-                    <a href="#" class="item-shop-promotions__link-title"
-                      >Plumping</a
-                    >
-                  </h4>
-                  <div class="item-shop-promotions__price">$ 50</div>
-                  <a
-                    href="#"
-                    class="item-shop-promotions__button button button--blue"
-                    >READ MORE</a
-                  >
-                </div>
-              </article>
-              <article class="shop-promotions__item item-shop-promotions">
-                <a href="#" class="item-shop-promotions__image-ibg-contain">
-                  <img src="@img/shop/promotions/products/02.jpg" alt="Image" />
-                </a>
-                <div class="item-shop-promotions__body">
-                  <h4 class="item-shop-promotions__title">
-                    <a href="#" class="item-shop-promotions__link-title"
-                      >Serum</a
-                    >
-                  </h4>
-                  <div class="item-shop-promotions__price">$ 50</div>
-                  <a href="#" class="item-shop-promotions__button button"
-                    >READ MORE</a
-                  >
-                </div>
-              </article>
-              <article class="shop-promotions__item item-shop-promotions">
-                <a href="#" class="item-shop-promotions__image-ibg-contain">
-                  <img src="@img/shop/promotions/products/03.jpg" alt="Image" />
-                </a>
-                <div class="item-shop-promotions__body">
-                  <h4 class="item-shop-promotions__title">
-                    <a href="#" class="item-shop-promotions__link-title"
-                      >Detergent</a
-                    >
-                  </h4>
-                  <div class="item-shop-promotions__price">$ 50</div>
-                  <a
-                    href="#"
-                    class="item-shop-promotions__button button button--blue"
-                    >READ MORE</a
-                  >
-                </div>
-              </article>
-              <article class="shop-promotions__item item-shop-promotions">
-                <a href="#" class="item-shop-promotions__image-ibg-contain">
-                  <img src="@img/shop/promotions/products/04.jpg" alt="Image" />
-                </a>
-                <div class="item-shop-promotions__body">
-                  <h4 class="item-shop-promotions__title">
-                    <a href="#" class="item-shop-promotions__link-title"
-                      >Filler</a
-                    >
-                  </h4>
-                  <div class="item-shop-promotions__price">$ 50</div>
-                  <a href="#" class="item-shop-promotions__button button"
-                    >READ MORE</a
-                  >
-                </div>
-              </article>
-              <article class="shop-promotions__item item-shop-promotions">
-                <a href="#" class="item-shop-promotions__image-ibg-contain">
-                  <img src="@img/shop/promotions/products/05.jpg" alt="Image" />
-                </a>
-                <div class="item-shop-promotions__body">
-                  <h4 class="item-shop-promotions__title">
-                    <a href="#" class="item-shop-promotions__link-title"
-                      >Soap</a
-                    >
-                  </h4>
-                  <div class="item-shop-promotions__price">$ 50</div>
-                  <a
-                    href="#"
-                    class="item-shop-promotions__button button button--blue"
-                    >READ MORE</a
-                  >
-                </div>
-              </article>
-              <article class="shop-promotions__item item-shop-promotions">
-                <a href="#" class="item-shop-promotions__image-ibg-contain">
-                  <img src="@img/shop/promotions/products/06.jpg" alt="Image" />
-                </a>
-                <div class="item-shop-promotions__body">
-                  <h4 class="item-shop-promotions__title">
-                    <a href="#" class="item-shop-promotions__link-title"
-                      >Cream</a
-                    >
-                  </h4>
-                  <div class="item-shop-promotions__price">$ 50</div>
-                  <a href="#" class="item-shop-promotions__button button"
-                    >READ MORE</a
-                  >
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
-        <section class="page-shop__services shop-services">
-          
-            <article class="shop-services__item item-shop-service">
-                <div
-                class="item-shop-service__section-header section-header section-header--center">
-                <div class="section-header__label section-header__label--transparent">
-                    CHECK SERVICES
-                  </div>
-                <h1 class="section-header__title section-header__title--white">
-                    Facilities
-                </h1>
-               
-                <a href="#" class="section-header__button button">VIEW ALL</a>
-              </div>
-              <div class="item-shop-service__bg-ibg">
-                <img src="@img/shop/services/01.jpg" alt="Image">
-              </div>
-            </article>
-            <article class="shop-services__item item-shop-service">
-                <div
-                class="item-shop-service__section-header section-header section-header--center">
-                <div class="section-header__label section-header__label--transparent">
-                    CHECK SERVICES
-                  </div>
-                <h1 class="section-header__title section-header__title--white">
-                    Facilities
-                </h1>
-               
-                <a href="#" class="section-header__button button button--blue">VIEW ALL</a>
-              </div>
-              <div class="item-shop-service__bg-ibg">
-                <img src="@img/shop/services/02.jpg" alt="Image">
-              </div>
-            </article>
-       
-        </section>
-      </main>
-      @@include('html/_footer.htm',{})
-    </div>
-    @@include('html/_js.htm',{})
-  </body>
+	@@include('html/_head.htm',{
+	"title":"Shop"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page-shop">
+				<section class="page-shop__hero hero">
+					<div class="hero__container">
+						<div class="hero__section-header section-header section-header--center">
+							<h1 class="section-header__title section-header__title--big section-header__title--white">Our Shop</h1>
+							<div class="section-header__text section-header__text--white text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci nisl, tempus ut sem a, scelerisque sollicitudin arcu. Phasellus porttitor dignissim nisl, vel aliquet enim.</p>
+							</div>
+							<a href="#" class="section-header__button button">CONTACT US</a>
+						</div>
+						<div class="hero__products products-hero">
+							<article class="products-hero__item item-product">
+								<a href="#" class="item-product__body">
+									<div class="item-product__price item-product__price--blue">$ 19</div>
+									<div class="item-product__image-ibg-contain">
+										<img src="@img/home/products/01.jpg" alt="Image">
+									</div>
+									<h4 class="item-product__name">Soap</h4>
+								</a>
+								<div class="item-product__info info-product">
+									<div class="info-product__title">SHOP INFO</div>
+									<ul class="info-product__list">
+										<li class="info-product__item">
+											<a href="#" class="info-product__link">Terms and Conditions</a>
+										</li>
+										<li class="info-product__item">
+											<a href="#" class="info-product__link">Services and Returns</a>
+										</li>
+										<li class="info-product__item">
+											<a href="#" class="info-product__link">Solidarity Gifts</a>
+										</li>
+									</ul>
+								</div>
+							</article>
+							<article class="products-hero__item item-product">
+								<a href="#" class="item-product__body">
+									<div class="item-product__price item-product__price--green">$ 19</div>
+									<div class="item-product__image-ibg-contain">
+										<img src="@img/home/products/02.jpg" alt="Image">
+									</div>
+									<h4 class="item-product__name">Soap</h4>
+								</a>
+								<div class="item-product__info info-product">
+									<div class="info-product__title">SHOP INFO</div>
+									<ul class="info-product__list">
+										<li class="info-product__item">
+											<a href="#" class="info-product__link">Terms and Conditions</a>
+										</li>
+										<li class="info-product__item">
+											<a href="#" class="info-product__link">Services and Returns</a>
+										</li>
+										<li class="info-product__item">
+											<a href="#" class="info-product__link">Solidarity Gifts</a>
+										</li>
+									</ul>
+								</div>
+							</article>
+							<article class="products-hero__item item-product">
+								<a href="#" class="item-product__body">
+									<div class="item-product__price item-product__price--blue">$ 19</div>
+									<div class="item-product__image-ibg-contain">
+										<img src="@img/home/products/03.jpg" alt="Image">
+									</div>
+									<h4 class="item-product__name">Soap</h4>
+								</a>
+								<div class="item-product__info info-product">
+									<div class="info-product__title">SHOP INFO</div>
+									<ul class="info-product__list">
+										<li class="info-product__item">
+											<a href="#" class="info-product__link">Terms and Conditions</a>
+										</li>
+										<li class="info-product__item">
+											<a href="#" class="info-product__link">Services and Returns</a>
+										</li>
+										<li class="info-product__item">
+											<a href="#" class="info-product__link">Solidarity Gifts</a>
+										</li>
+									</ul>
+								</div>
+							</article>
+							<article class="products-hero__item item-product">
+								<a href="#" class="item-product__body">
+									<div class="item-product__price item-product__price--green">$ 19</div>
+									<div class="item-product__image-ibg-contain">
+										<img src="@img/home/products/04.jpg" alt="Image">
+									</div>
+									<h4 class="item-product__name">Soap</h4>
+								</a>
+								<div class="item-product__info info-product">
+									<div class="info-product__title">SHOP INFO</div>
+									<ul class="info-product__list">
+										<li class="info-product__item">
+											<a href="#" class="info-product__link">Terms and Conditions</a>
+										</li>
+										<li class="info-product__item">
+											<a href="#" class="info-product__link">Services and Returns</a>
+										</li>
+										<li class="info-product__item">
+											<a href="#" class="info-product__link">Solidarity Gifts</a>
+										</li>
+									</ul>
+								</div>
+							</article>
+						</div>
+					</div>
+					<div class="hero__image-ibg">
+						<img src="@img/shop/hero/bg.jpg" alt="Img">
+					</div>
+				</section>
+				<section class="page-shop__promotions shop-promotions">
+					<div class="shop-promotions__container">
+						<div class="shop-promotions__section-header section-header section-header--center">
+							<div class="section-header__label section-header__label--blue">MONTHLY SALE</div>
+							<h2 class="section-header__title">Daily Promotions</h2>
+						</div>
+						<div class="shop-promotions__items">
+							<article class="shop-promotions__item item-shop-promotions">
+								<a href="#" class="item-shop-promotions__image-ibg-contain">
+									<img src="@img/shop/promotions/products/01.jpg" alt="Image">
+								</a>
+								<div class="item-shop-promotions__body">
+									<h4 class="item-shop-promotions__title">
+										<a href="#" class="item-shop-promotions__link-title">Plumping</a>
+									</h4>
+									<div class="item-shop-promotions__price">$ 50</div>
+									<a href="#" class="item-shop-promotions__button button button--blue">READ MORE</a>
+								</div>
+							</article>
+							<article class="shop-promotions__item item-shop-promotions">
+								<a href="#" class="item-shop-promotions__image-ibg-contain">
+									<img src="@img/shop/promotions/products/02.jpg" alt="Image">
+								</a>
+								<div class="item-shop-promotions__body">
+									<h4 class="item-shop-promotions__title">
+										<a href="#" class="item-shop-promotions__link-title">Plumping</a>
+									</h4>
+									<div class="item-shop-promotions__price">$ 50</div>
+									<a href="#" class="item-shop-promotions__button button">READ MORE</a>
+								</div>
+							</article>
+							<article class="shop-promotions__item item-shop-promotions">
+								<a href="#" class="item-shop-promotions__image-ibg-contain">
+									<img src="@img/shop/promotions/products/03.jpg" alt="Image">
+								</a>
+								<div class="item-shop-promotions__body">
+									<h4 class="item-shop-promotions__title">
+										<a href="#" class="item-shop-promotions__link-title">Plumping</a>
+									</h4>
+									<div class="item-shop-promotions__price">$ 50</div>
+									<a href="#" class="item-shop-promotions__button button button--blue">READ MORE</a>
+								</div>
+							</article>
+							<article class="shop-promotions__item item-shop-promotions">
+								<a href="#" class="item-shop-promotions__image-ibg-contain">
+									<img src="@img/shop/promotions/products/04.jpg" alt="Image">
+								</a>
+								<div class="item-shop-promotions__body">
+									<h4 class="item-shop-promotions__title">
+										<a href="#" class="item-shop-promotions__link-title">Plumping</a>
+									</h4>
+									<div class="item-shop-promotions__price">$ 50</div>
+									<a href="#" class="item-shop-promotions__button button button--blue">READ MORE</a>
+								</div>
+							</article>
+							<article class="shop-promotions__item item-shop-promotions">
+								<a href="#" class="item-shop-promotions__image-ibg-contain">
+									<img src="@img/shop/promotions/products/05.jpg" alt="Image">
+								</a>
+								<div class="item-shop-promotions__body">
+									<h4 class="item-shop-promotions__title">
+										<a href="#" class="item-shop-promotions__link-title">Plumping</a>
+									</h4>
+									<div class="item-shop-promotions__price">$ 50</div>
+									<a href="#" class="item-shop-promotions__button button button--blue">READ MORE</a>
+								</div>
+							</article>
+							<article class="shop-promotions__item item-shop-promotions">
+								<a href="#" class="item-shop-promotions__image-ibg-contain">
+									<img src="@img/shop/promotions/products/06.jpg" alt="Image">
+								</a>
+								<div class="item-shop-promotions__body">
+									<h4 class="item-shop-promotions__title">
+										<a href="#" class="item-shop-promotions__link-title">Plumping</a>
+									</h4>
+									<div class="item-shop-promotions__price">$ 50</div>
+									<a href="#" class="item-shop-promotions__button button button--blue">READ MORE</a>
+								</div>
+							</article>
+						</div>
+					</div>
+				</section>
+				<section class="page-shop__services shop-services">
+					<article class="shop-services__item item-shop-service">
+						<div class="item-shop-service__section-header section-header section-header--center">
+							<div class="section-header__label section-header__label--transparent">CHECK SERVICES</div>
+							<h1 class="section-header__title section-header__title--white">Facilities</h1>
+							<a href="#" class="section-header__button button">VIEW ALL</a>
+						</div>
+						<div class="item-shop-service__bg-ibg">
+							<img src="@img/shop/services/01.jpg" alt="Image">
+						</div>
+					</article>
+					<article class="shop-services__item item-shop-service">
+						<div class="item-shop-service__section-header section-header section-header--center">
+							<div class="section-header__label section-header__label--transparent">INCLUDED</div>
+							<h1 class="section-header__title section-header__title--white">Products</h1>
+							<a href="#" class="section-header__button button button--blue">SEE MORE</a>
+						</div>
+						<div class="item-shop-service__bg-ibg">
+							<img src="@img/shop/services/02.jpg" alt="Image">
+						</div>
+					</article>
+				</section>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
 </html>

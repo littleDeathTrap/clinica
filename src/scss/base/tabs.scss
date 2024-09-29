@@ -6,8 +6,8 @@
 	// .tabs__title
 	&__title {
 		border: 1px solid #eee;
-		padding: rem(10) rem(15);
-		border-radius: rem(5);
+		padding: toRem(10) toRem(15);
+		border-radius: toRem(5);
 		&._tab-active {
 			border: 1px solid #000;
 		}
@@ -15,7 +15,7 @@
 	// .tabs__content
 	&__content {
 		border: 1px solid #eee;
-		padding: rem(10) rem(15);
+		padding: toRem(10) toRem(15);
 	}
 	// .tabs__body
 	&__body {

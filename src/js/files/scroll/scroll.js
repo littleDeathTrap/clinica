@@ -1,4 +1,4 @@
-// Підключення функціоналу 
+// Підключення функціоналу
 import { isMobile, getHash, menuClose } from "../functions.js";
 import { flsModules } from "../../files/modules.js";
 // Модуль прокручування до блоку
@@ -116,19 +116,15 @@ export function headerScroll() {
 }
 // Модуль анімація цифрового лічильника
 export function digitsCounter() {
-	// Обнулення
-	if (document.querySelectorAll("[data-digits-counter]").length) {
-		document.querySelectorAll("[data-digits-counter]").forEach(element => {
-			element.dataset.digitsCounter = element.innerHTML;
-			element.innerHTML = `0`;
-		});
-	}
-
 	// Функція ініціалізації
 	function digitsCountersInit(digitsCountersItems) {
 		let digitsCounters = digitsCountersItems ? digitsCountersItems : document.querySelectorAll("[data-digits-counter]");
 		if (digitsCounters.length) {
 			digitsCounters.forEach(digitsCounter => {
+				// Обнулення
+				digitsCounter.dataset.digitsCounter = digitsCounter.innerHTML;
+				digitsCounter.innerHTML = `0`;
+				// Анімація
 				digitsCountersAnimate(digitsCounter);
 			});
 		}

@@ -22,11 +22,11 @@
 	*/
 
 	//Від кого лист
-	$mail->setFrom('from@gmail.com', ''); // Вказати потрібний E-mail
+	$mail->setFrom('from@gmail.com', 'Nataliia'); // Вказати потрібний E-mail
 	//Кому відправити
 	$mail->addAddress('to@gmail.com'); // Вказати потрібний E-mail
 	//Тема листа
-	$mail->Subject = 'Вітання! "';
+	$mail->Subject = 'Вітання! It is "Nataliia"';
 
 	//Тіло листа
 	$body = '<h1>Зустрічайте супер листа!</h1>';

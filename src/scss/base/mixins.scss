@@ -3,8 +3,9 @@
 	@font-face {
 		font-family: $font_name;
 		font-display: swap;
-		src: url("../fonts/#{$file_name}.woff2") format("woff2"),
-		 url("../fonts/#{$file_name}.woff") format("woff");
+		src:
+			url("../fonts/#{$file_name}.woff2") format("woff2"),
+			url("../fonts/#{$file_name}.woff") format("woff");
 		font-weight: #{$weight};
 		font-style: #{$style};
 	}
@@ -15,7 +16,7 @@
 	@return $result;
 }
 //REM
-@function rem($px) {
+@function toRem($px) {
 	$result: math.div($px, 16) + rem;
 	@return $result;
 }
@@ -66,19 +67,19 @@
 	@if ($yIntersection==0) {
 		$yIntersection: 0.000001;
 	}
-	$flyValue: #{rem($yIntersection)}" + " #{$slope * 100}vw;
+	$flyValue: #{toRem($yIntersection)}" + " #{$slope * 100}vw;
 
 	// Отримання значення властивості
-	$propertyValue: #{"clamp(" rem($minSize) "," $flyValue "," rem($startSize) ")"};
+	$propertyValue: #{"clamp(" toRem($minSize) "," $flyValue "," toRem($startSize) ")"};
 	// Якщо негативні значення
 	@if ($minSize > $startSize) {
-		$propertyValue: #{"clamp(" rem($startSize) "," $flyValue "," rem($minSize) ")"};
+		$propertyValue: #{"clamp(" toRem($startSize) "," $flyValue "," toRem($minSize) ")"};
 	}
 
 	// Встановлюємо значення за замовчуванням
 	@if $keepSize != 1 and $keepSize != 3 {
 		@media (min-width: $widthFromMedia) {
-			#{$property}: rem($startSize);
+			#{$property}: toRem($startSize);
 		}
 	}
 	// Адаптуємо розмір у проміжку між зазначеними ширинами в'юпорту
@@ -89,12 +90,12 @@
 		}
 		// Якщо не підтримується clamp();
 		@supports not (#{$property}: $propertyValue) {
-			#{$property}: calc(#{rem($minSize)} + #{$addSize} * (100vw - #{rem($widthTo)}) / #{math.div($widthFrom, 16) - math.div($widthTo, 16)});
+			#{$property}: calc(#{toRem($minSize)} + #{$addSize} * (100vw - #{toRem($widthTo)}) / #{math.div($widthFrom, 16) - math.div($widthTo, 16)});
 		}
 	}
 	@if $keepSize != 1 and $keepSize != 2 {
 		@media (max-width: $widthToMedia) {
-			#{$property}: rem($minSize);
+			#{$property}: toRem($minSize);
 		}
 	}
 }

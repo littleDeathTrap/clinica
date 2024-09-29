@@ -1,433 +1,342 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  @@include('html/_head.htm',{ "title":"About Us" })
-  <body>
-    <div class="wrapper">
-      @@include('html/_header.htm',{})
-      <main class="page-about">
-        <section class="page-about__hero hero">
-          <div class="hero__container">
-            <div
-              class="hero__section-header section-header section-header--center"
-            >
-              <h1
-                class="section-header__title section-header__title--big section-header__title--white"
-              >
-                About us
-              </h1>
-            </div>
-          </div>
-          <div class="hero__image-ibg">
-            <img src="@img/about/about/bg.jpg" alt="Image" />
-          </div>
-        </section>
-        <section class="page-about__history history">
-          <div class="history__container">
-            <div class="history__info info-history">
-              <div class="info-history__image-ibg">
-                <img src="@img/about/history/01.jpg" alt="Img" />
-              </div>
-              <div class="info-history__exp exp-info-history">
-                <div class="exp-info-history__icon">
-                  <img src="@img/about/history/icon.png" alt="Image" />
-                </div>
+	@@include('html/_head.htm',{
+	"title":"About Us"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page-about">
+				<section class="page-about__hero hero">
+					<div class="hero__container">
+						<div class="hero__section-header section-header section-header--center">
+							<h1 class="section-header__title section-header__title--big section-header__title--white">About us</h1>
+						</div>
+					</div>
+					<div class="hero__image-ibg">
+						<img src="@img/about/hero/bg.jpg" alt="Img">
+					</div>
+				</section>
+				<section class="page-about__history history">
+					<div class="history__container">
+						<div class="history__info info-history">
+							<div class="info-history__image-ibg">
+								<img src="@img/about/history/01.jpg" alt="Image">
+							</div>
+							<div class="info-history__exp exp-info-history">
+								<div class="exp-info-history__icon">
+									<img src="@img/about/history/icon.png" alt="Image">
+								</div>
+								<div class="exp-info-history__value">+76</div>
+								<div class="exp-info-history__label">YEARS ON MARKET</div>
+							</div>
+						</div>
+						<div class="info-history__body">
+							<div class="info-history__section-header section-header">
+								<div class="section-header__label section-header__label--green">HOUR HISTORY</div>
+								<h2 class="section-header__title">From the Start</h2>
+							</div>
+							<div class="info-history__text text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et metus augue. Mauris ut libero eget.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et metus augue. Mauris ut libero eget.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et metus augue. Mauris ut libero eget.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et metus augue. Mauris ut libero eget.</p>
+							</div>
+							<div class="info-history__surgery surgery-about-us">
+								<div class="surgery-about-us__user user-info">
+									<a href class="user-info__avatar-ibg">
+										<img src="@img/avatar.jpg" alt="User Photo">
+									</a>
+									<div class="user-info__body">
+										<h4 class="user-info__title"><a href class="user-info__link-title">Stephen Mcmiller</a></h4>
+										<div class="user-info__position">MAIN DOCTOR</div>
+									</div>
+								</div>
+								<div class="surgery-about-us__signature">
+									<img src="@img/home/about-us/signature.png" alt="signature">
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<div class="page-about__gallery gallery-about">
+					<div class="gallery-about__row">
+						<div class="gallery-about__item item-gallery-about">
+							<div class="item-gallery-about__image-ibg">
+								<img src="@img/gallery/01.jpg" alt="Image">
+							</div>
+						</div>
+						<div class="gallery-about__item item-gallery-about item-gallery-about--big">
+							<div class="item-gallery-about__column">
+								<div class="item-gallery-about__body">
+									<div class="item-gallery-about__label">LOREM IPSUM</div>
+									<div class="item-gallery-about__title">Abby Ray</div>
+									<div class="item-gallery-about__text text">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pretium dolor sit amet mi pulvinar</p>
+									</div>
+									<div class="item-gallery-about__social social">
+										<ul class="social__list">
+											<li class="social__item">
+												<a href class="social__link _icon-social-fb"></a>
+											</li>
+											<li class="social__item">
+												<a href class="social__link _icon-social-tw"></a>
+											</li>
+											<li class="social__item">
+												<a href class="social__link _icon-social-yt"></a>
+											</li>
+											<li class="social__item">
+												<a href class="social__link _icon-social-v"></a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="item-gallery-about__bg-ibg">
+									<img src="@img/about/gallery/card_bg-01.jpg" alt="Img">
+								</div>
+							</div>
+							<div class="item-gallery-about__column">
+								<div class="item-gallery-about__image-ibg">
+									<img src="@img/about/gallery/02.jpg" alt="Image">
+								</div>
+							</div>
+						</div>
+						<div class="gallery-about__item item-gallery-about">
+							<div class="item-gallery-about__image-ibg">
+								<img src="@img/gallery/03.jpg" alt="Image">
+							</div>
+						</div>
+						<div class="gallery-about__item item-gallery-about">
+							<div class="item-gallery-about__image-ibg">
+								<img src="@img/gallery/04.jpg" alt="Image">
+							</div>
+						</div>
+					</div>
+					<div class="gallery-about__row">
+						<div class="gallery-about__item item-gallery-about">
+							<div class="item-gallery-about__image-ibg">
+								<img src="@img/gallery/05.jpg" alt="Image">
+							</div>
+						</div>
+						<div class="gallery-about__item item-gallery-about">
+							<div class="item-gallery-about__image-ibg">
+								<img src="@img/gallery/06.jpg" alt="Image">
+							</div>
+						</div>
+						<div class="gallery-about__item item-gallery-about">
+							<div class="item-gallery-about__image-ibg">
+								<img src="@img/gallery/07.jpg" alt="Image">
+							</div>
+						</div>
+						<div class="gallery-about__item item-gallery-about item-gallery-about--big">
+							<div class="item-gallery-about__column">
+								<div class="item-gallery-about__body">
+									<div class="item-gallery-about__label">LOREM IPSUM</div>
+									<div class="item-gallery-about__title">Keller Maci</div>
+									<div class="item-gallery-about__text text">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pretium dolor sit amet mi pulvinar</p>
+									</div>
+									<div class="item-gallery-about__social social">
+										<ul class="social__list">
+											<li class="social__item">
+												<a href class="social__link _icon-social-fb"></a>
+											</li>
+											<li class="social__item">
+												<a href class="social__link _icon-social-tw"></a>
+											</li>
+											<li class="social__item">
+												<a href class="social__link _icon-social-yt"></a>
+											</li>
+											<li class="social__item">
+												<a href class="social__link _icon-social-v"></a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="item-gallery-about__bg-ibg">
+									<img src="@img/about/gallery/card_bg-02.jpg" alt="Img">
+								</div>
+							</div>
+							<div class="item-gallery-about__column">
+								<div class="item-gallery-about__image-ibg">
+									<img src="@img/about/gallery/08.jpg" alt="Image">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<section class="page-about__commitment commitment">
+					<div class="commitment__container">
+						<div class="commitment__section-header section-header">
+							<div class="section-header__label section-header__label--blue">THE STEPS</div>
+							<h2 class="section-header__title">Our Commitment</h2>
+						</div>
+						<div class="commitment__items">
+							<article class="commitment__item">
+								<div class="commitment__number">1</div>
+								<h4 class="commitment__title">The Beginning</h4>
+								<div class="commitment__text text">
+									<p>Quisque eu euismod arcu. Morbi dapibus diam, sed interdum velit. Proin tempor nun.</p>
+								</div>
+								<ul class="commitment__list list-commitment">
+									<li class="list-commitment__item _icon-check">In sit amet augue non dui</li>
+									<li class="list-commitment__item _icon-check">Proin quis elit lacinia arcu</li>
+								</ul>
+							</article>
+							<article class="commitment__item">
+								<div class="commitment__number">2</div>
+								<h4 class="commitment__title">Settling</h4>
+								<div class="commitment__text text">
+									<p>Mauris vel quam vel felis maximus bibendum vel quis erat. Duis accumsan posuere.</p>
+								</div>
+								<ul class="commitment__list list-commitment">
+									<li class="list-commitment__item _icon-check">In sit amet augue non dui</li>
+									<li class="list-commitment__item _icon-check">Proin quis elit lacinia arcu</li>
+								</ul>
+							</article>
+							<article class="commitment__item">
+								<div class="commitment__number">3</div>
+								<h4 class="commitment__title">Production</h4>
+								<div class="commitment__text text">
+									<p>Phasellus mattis arcu ut ante hendrerit faucibus. Sed tristique justo sed nunc sagittis, nec.</p>
+								</div>
+								<ul class="commitment__list list-commitment">
+									<li class="list-commitment__item _icon-check">In sit amet augue non dui</li>
+									<li class="list-commitment__item _icon-check">Proin quis elit lacinia arcu</li>
+								</ul>
+							</article>
+							<article class="commitment__item">
+								<div class="commitment__number">4</div>
+								<h4 class="commitment__title">Today</h4>
+								<div class="commitment__text text">
+									<p>Phasellus mattis arcu ut ante hendrerit faucibus. Sed tristique justo sed nunc sagittis, nec.</p>
+								</div>
+								<ul class="commitment__list list-commitment">
+									<li class="list-commitment__item _icon-check">In sit amet augue non dui</li>
+									<li class="list-commitment__item _icon-check">Proin quis elit lacinia arcu</li>
+								</ul>
+							</article>
+						</div>
+					</div>
 
-                <div class="exp-info-history__value">+76</div>
-                <div class="exp-info-history__label">YEARS ON MARKET</div>
-              </div>
-            </div>
-            <div class="info-history__body">
-              <div class="info-history__section-header section-header">
-                <div class="section-header__label section-header__label--green">
-                  HOUR HISTORY
-                </div>
-                <h2 class="section-header__title">From the Start</h2>
-              </div>
-              <div class="info-history__text text">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Phasellus et metus augue. Mauris ut libero eget.
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Phasellus et metus augue. Mauris ut libero eget.
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Phasellus et metus augue. Mauris ut libero eget.
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Phasellus et metus augue. Mauris ut libero eget.
-                </p>
-              </div>
+				</section>
+				<section class="page-about__promotions about-promotions">
+					<div class="about-promotions__container">
+						<div class="about-promotions__section-header section-header section-header--center">
+							<h1 class="section-header__title section-header__title--white">Daily Promotions</h1>
+						</div>
+						<div class="about-promotions__text text">
+							<p>
+								Mauris vel quam vel felis maximus bibendum vel quis erat. Duis accumsan posuere est quis egestas. Donec nec odio non tellus convallis mattis a nec purus. Duis quis tortor elit.
+							</p>
+						</div>
+						<a href="#" class="about-promotions__button button">CONTACT US</a>
+					</div>
+					<div class="about-promotions__bg-ibg">
+						<img src="@img/about/promotions/bg.jpg" alt="Image">
+					</div>
+				</section>
+				<section class="page-about__experience experience">
+					<div class="experience__container">
+						<div class="experience__section-header section-header section-header--center">
+							<div class="section-header__label">OUR HISTORY</div>
+							<h2 class="section-header__title">Experience & Quality</h2>
+							<div class="section-header__text text">
+								<p>Suspendisse pretium ut massa vel molestie. Aenean mollis egestas sapien. Proin aliquam euismod finibus. Aliquam vitae metus elit. In fringilla leo</p>
+							</div>
+						</div>
+						<div class="experience__items">
+							<div class="experience__item item-experience">
+								<div class="item-experience__header">
+									<div class="item-experience__title">Basic Plan</div>
+									<div class="item-experience__price"><span>$</span> 74.99</div>
+									<div class="item-experience__label">ALL INCLUDED</div>
+								</div>
+								<div class="item-experience__body">
+									<ul class="item-experience__list">
+										<li>Praesent ultrices urna purus</li>
+										<li>Sed vitae tristique nisl ultric</li>
+										<li>Donec a ligula lacinia, cons</li>
+										<li>Nunc scelerisque velit a pul</li>
+									</ul>
+									<a href="#" class="item-experience__button button button--blue">CHECK</a>
+								</div>
+							</div>
 
-              <div class="info-history__surgery surgery-about-us">
-                <div class="surgery-about-us__user user-info">
-                  <a href class="user-info__avatar-ibg">
-                    <img src="@img/about/history/02.png" alt="User Photo" />
-                  </a>
-                  <div class="user-info__body">
-                    <h4 class="user-info__title">
-                      <a href class="user-info__link-title">Victor Smith</a>
-                    </h4>
-                    <div class="user-info__position">GENERAL MANAGER</div>
-                  </div>
-                </div>
-                <div class="surgery-about-us__signature">
-                  <img
-                    src="@img/home/about-us/signature.png.png"
-                    alt="signature"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <div class="page-about__gallery gallery-about">
-          <div class="gallery-about__row">
-            <div class="gallery-about__item item-gallery-about">
-              <div class="item-gallery-about__image-ibg">
-                <img src="@img/about/gallery/01.jpg" alt="Image" />
-              </div>
-            </div>
-            <div
-              class="gallery-about__item item-gallery-about item-gallery-about--big"
-            >
-              <div class="item-gallery-about__column">
-                <div class="item-gallery-about__body">
-                  <div class="item-gallery-about__label">LOREM IPSUM</div>
-                  <div class="item-gallery-about__title">Abby Ray</div>
-                  <div class="item-gallery-about__text text">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Mauris pretium dolor sit amet mi pulvinar
-                    </p>
-                  </div>
-                  <div class="item-gallery-about__social social">
-                    <ul class="social__list">
-                      <li class="social__item">
-                        <a href="" class="social__link _icon-social-twiter"></a>
-                      </li>
-                      <li class="social__item">
-                        <a href="" class="social__link _icon-social-yt"></a>
-                      </li>
-                      <li class="social__item">
-                        <a href="" class="social__link _icon-social-fb"></a>
-                      </li>
-                      <li class="social__item">
-                        <a href="" class="social__link _icon-social-vimeo"></a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+							<div class="experience__item item-experience item-experience--popular">
+								<div class="item-experience__header">
+									<div class="item-experience__title">Popular</div>
+									<div class="item-experience__price"><span>$</span> 79.99</div>
+									<div class="item-experience__label">MONTHLY</div>
+								</div>
+								<div class="item-experience__body">
+									<ul class="item-experience__list">
+										<li>Praesent ultrices urna purus</li>
+										<li>Sed vitae tristique nisl ultric</li>
+										<li>Donec a ligula lacinia, cons</li>
+										<li>Nunc scelerisque velit a pul</li>
+									</ul>
+									<a href="#" class="item-experience__button button">CONTACT</a>
+								</div>
+							</div>
 
-                <div class="item-gallery-about__bg-ibg">
-                  <img src="@img/about/gallery/bg-01.jpg" alt="Image" />
-                </div>
-              </div>
-              <div class="item-gallery-about__column">
-                <div class="item-gallery-about__image-ibg">
-                  <img src="@img/about/gallery/02.jpg" alt="Image" />
-                </div>
-              </div>
-            </div>
-            <div class="gallery-about__item item-gallery-about">
-              <div class="item-gallery-about__image-ibg">
-                <img src="@img/about/gallery/03.jpg" alt="Image" />
-              </div>
-            </div>
-            <div class="gallery-about__item item-gallery-about">
-              <div class="item-gallery-about__image-ibg">
-                <img src="@img/about/gallery/04.jpg" alt="Image" />
-              </div>
-            </div>
-          </div>
-          <div class="gallery-about__row">
-            <div class="gallery-about__item item-gallery-about">
-              <div class="item-gallery-about__image-ibg">
-                <img src="@img/about/gallery/05.jpg" alt="Image" />
-              </div>
-            </div>
-            <div class="gallery-about__item item-gallery-about">
-              <div class="item-gallery-about__image-ibg">
-                <img src="@img/about/gallery/06.jpg" alt="Image" />
-              </div>
-            </div>
-            <div class="gallery-about__item item-gallery-about">
-              <div class="item-gallery-about__image-ibg">
-                <img src="@img/about/gallery/07.jpg" alt="Image" />
-              </div>
-            </div>
-
-            <div
-              class="gallery-about__item item-gallery-about item-gallery-about--big"
-            >
-              <div class="item-gallery-about__column">
-                <div class="item-gallery-about__body">
-                  <div class="item-gallery-about__label">LOREM IPSUM</div>
-                  <div class="item-gallery-about__title">Abby Ray</div>
-                  <div class="item-gallery-about__text text">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Mauris pretium dolor sit amet mi pulvinar
-                    </p>
-                  </div>
-                  <div class="item-gallery-about__social social">
-                    <ul class="social__list">
-                      <li class="social__item">
-                        <a href="" class="social__link _icon-social-twiter"></a>
-                      </li>
-                      <li class="social__item">
-                        <a href="" class="social__link _icon-social-yt"></a>
-                      </li>
-                      <li class="social__item">
-                        <a href="" class="social__link _icon-social-fb"></a>
-                      </li>
-                      <li class="social__item">
-                        <a href="" class="social__link _icon-social-vimeo"></a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div class="item-gallery-about__bg-ibg">
-                  <img src="@img/about/gallery/bg-02.jpg" alt="Image" />
-                </div>
-              </div>
-              <div class="item-gallery-about__column">
-                <div class="item-gallery-about__image-ibg">
-                  <img src="@img/about/gallery/08.jpg" alt="Image" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <section class="page-about__commitment commitment">
-          <div class="commitment__container">
-            <div class="commitment__section-header section-header">
-              <div class="section-header__label section-header__label--blue">
-                THE STEPS
-              </div>
-              <h2 class="section-header__title">Our Commitment</h2>
-            </div>
-            <div class="commitment__items">
-              <article class="commitment__item">
-                <div class="commitment__number">1</div>
-                <h4 class="commitment__title">The beginning</h4>
-                <div class="commitment__text text">
-                  <p>
-                    Quisque eu euismod arcu. Morbi dapibus diam, sed interdum
-                    velit. Proin tempor nun.
-                  </p>
-                </div>
-                <ul class="commitment__list list-commitment">
-                  <li class="list-commitment__item _icon-check">
-                    In sit amet augue non dui
-                  </li>
-                  <li class="list-commitment__item _icon-check">
-                    Proin quis elit lacinia arcu
-                  </li>
-                </ul>
-              </article>
-              <article class="commitment__item">
-                <div class="commitment__number">2</div>
-                <h4 class="commitment__title">Settling</h4>
-                <div class="commitment__text text">
-                  <p>
-                    Mauris vel quam vel felis maximus bibendum vel quis erat.
-                    Duis accumsan posuere.
-                  </p>
-                </div>
-                <ul class="commitment__list list-commitment">
-                  <li class="list-commitment__item _icon-check">
-                    In sit amet augue non dui
-                  </li>
-                  <li class="list-commitment__item _icon-check">
-                    Proin quis elit lacinia arcu
-                  </li>
-                </ul>
-              </article>
-              <article class="commitment__item">
-                <div class="commitment__number">3</div>
-                <h4 class="commitment__title">Production</h4>
-                <div class="commitment__text text">
-                  <p>
-                    Phasellus mattis arcu ut ante hendrerit faucibus. Sed
-                    tristique justo sed nunc sagittis, nec.
-                  </p>
-                </div>
-                <ul class="commitment__list list-commitment">
-                  <li class="list-commitment__item _icon-check">
-                    In sit amet augue non dui
-                  </li>
-                  <li class="list-commitment__item _icon-check">
-                    Proin quis elit lacinia arcu
-                  </li>
-                </ul>
-              </article>
-              <article class="commitment__item">
-                <div class="commitment__number">4</div>
-                <h4 class="commitment__title">Today</h4>
-                <div class="commitment__text text">
-                  <p>
-                    Vivamus quis interdum neque. Aenean convallis urna at sapien
-                    dignissim, quis fringilla ipsum.
-                  </p>
-                </div>
-                <ul class="commitment__list list-commitment">
-                  <li class="list-commitment__item _icon-check">
-                    In sit amet augue non dui
-                  </li>
-                  <li class="list-commitment__item _icon-check">
-                    Proin quis elit lacinia arcu
-                  </li>
-                </ul>
-              </article>
-            </div>
-          </div>
-        </section>
-        <section class="page-about__promotions about-promotions">
-          <div class="about-promotions__container">
-            <div
-              class="about-promotions__section-header section-header section-header--center"
-            >
-              <h1 class="section-header__title section-header__title--white">
-                Daily Promotions
-              </h1>
-            </div>
-            <div class="about-promotions__text text">
-              <p>
-                Mauris vel quam vel felis maximus bibendum vel quis erat. Duis
-                accumsan posuere est quis egestas. Donec nec odio non tellus
-                convallis mattis a nec purus. Duis quis tortor elit.
-              </p>
-            </div>
-            <a href="#" class="about-promotions__button button">CONTACT US</a>
-          </div>
-          <div class="about-promotions__bg-ibg">
-            <img src="@img/about/promotions/bg.jpg" alt="Image" />
-          </div>
-        </section>
-        <section class="page-about__experience experience">
-          <div class="experience__container">
-            <div class="experience__section-header section-header section-header--center">
-              <div class="section-header__label">OUR HISTORY</div>
-              <h2 class="section-header__title">Experience & Quality</h2>
-              <div class="section-header__text text">
-                <p>
-                  Suspendisse pretium ut massa vel molestie. Aenean mollis
-                  egestas sapien. Proin aliquam euismod finibus. Aliquam vitae
-                  metus elit. In fringilla leo
-                </p>
-              </div>
-            </div>
-            <div class="experience__items">
-              <div class="experience__item item-experience">
-                <div class="item-experience__header">
-                  <div class="item-experience__title">Basic Plan</div>
-                  <div class="item-experience__price"><span>$ </span>74.99</div>
-                  <div class="item-experience__label">ALL INCLUDED</div>
-                </div>
-                <div class="item-experience__body">
-                  <ul class="item-experience__list">
-                    <li>Praesent ultrices urna purus</li>
-                    <li>Sed vitae tristique nisl ultric</li>
-                    <li>Donec a ligula lacinia, cons</li>
-                    <li>Nunc scelerisque velit a pul</li>
-                  </ul>
-                  <a
-                    href="#"
-                    class="item-experience__button button button--blue"
-                    >CHECK</a
-                  >
-                </div>
-              </div>
-              <div class="experience__item item-experience--popular">
-                <div class="item-experience__header">
-                  <div class="item-experience__title">Popular</div>
-                  <div class="item-experience__price"><span>$ </span>79.99</div>
-                  <div class="item-experience__label">MONTHLY</div>
-                </div>
-                <div class="item-experience__body">
-                  <ul class="item-experience__list">
-                    <li>Praesent ultrices urna purus</li>
-                    <li>Sed vitae tristique nisl ultric</li>
-                    <li>Donec a ligula lacinia, cons</li>
-                    <li>Nunc scelerisque velit a pul</li>
-                  </ul>
-                  <a href="#" class="item-experience__button button button--"
-                    >CONTACT</a
-                  >
-                </div>
-              </div>
-
-              <div class="experience__item item-experience">
-                <div class="item-experience__header">
-                  <div class="item-experience__title">Basic Plan</div>
-                  <div class="item-experience__price"><span>$ </span>74.99</div>
-                  <div class="item-experience__label">ALL INCLUDED</div>
-                </div>
-                <div class="item-experience__body">
-                  <ul class="item-experience__list">
-                    <li>Praesent ultrices urna purus</li>
-                    <li>Sed vitae tristique nisl ultric</li>
-                    <li>Donec a ligula lacinia, cons</li>
-                    <li>Nunc scelerisque velit a pul</li>
-                  </ul>
-                  <a
-                    href="#"
-                    class="item-experience__button button button--blue"
-                    >CHECK</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="experience__advantages advantages">
-            
-                <div class="advantages__item">
-                  <div class="advantages__icon">
-                  <img src="@img/advantages/01.png" alt="Icon">
-                  </div>
-                  <div class="advantages__body">
-                    <h4 class="advantages__title">Creation</h4>
-                    <div class="advantages__text text">
-                      <p>Proin at varius arcu sed.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="advantages__item">
-                  <div class="advantages__icon">
-                  <img src="@img/advantages/02.png" alt="Icon">
-                  </div>
-                  <div class="advantages__body">
-                    <h4 class="advantages__title">Analyses</h4>
-                    <div class="advantages__text text">
-                      <p>Proin at varius arcu sed.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="advantages__item">
-                  <div class="advantages__icon">
-                  <img src="@img/advantages/03.png" alt="Icon">
-                  </div>
-                  <div class="advantages__body">
-                    <h4 class="advantages__title">Marketing</h4>
-                    <div class="advantages__text text">
-                      <p>Proin at varius arcu sed.</p>
-                    </div>
-                  </div>
-                </div>
-            
-            </div>
-          </div>
-        </section>
-
-       
-      </main>
-      @@include('html/_footer.htm',{})
-    </div>
-    @@include('html/_js.htm',{})
-  </body>
+							<div class="experience__item item-experience">
+								<div class="item-experience__header">
+									<div class="item-experience__title">Advanced</div>
+									<div class="item-experience__price"><span>$</span> 74.99</div>
+									<div class="item-experience__label">ALL INCLUDED</div>
+								</div>
+								<div class="item-experience__body">
+									<ul class="item-experience__list">
+										<li>Praesent ultrices urna purus</li>
+										<li>Sed vitae tristique nisl ultric</li>
+										<li>Donec a ligula lacinia, cons</li>
+										<li>Nunc scelerisque velit a pul</li>
+									</ul>
+									<a href="#" class="item-experience__button button button--blue">CHECK</a>
+								</div>
+							</div>
+						</div>
+						<div class="experience__advantages advantages">
+							<div class="advantages__item">
+								<div class="advantages__icon">
+									<img src="@img/advantages/01.png" alt="Icon">
+								</div>
+								<div class="advantages__body">
+									<h4 class="advantages__title">Creation</h4>
+									<div class="advantages__text text">
+										<p>Proin at varius arcu sed.</p>
+									</div>
+								</div>
+							</div>
+							<div class="advantages__item">
+								<div class="advantages__icon">
+									<img src="@img/advantages/02.png" alt="Icon">
+								</div>
+								<div class="advantages__body">
+									<h4 class="advantages__title">Analyses</h4>
+									<div class="advantages__text text">
+										<p>Proin at varius arcu sed.</p>
+									</div>
+								</div>
+							</div>
+							<div class="advantages__item">
+								<div class="advantages__icon">
+									<img src="@img/advantages/03.png" alt="Icon">
+								</div>
+								<div class="advantages__body">
+									<h4 class="advantages__title">Marketing</h4>
+									<div class="advantages__text text">
+										<p>Proin at varius arcu sed.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
 </html>

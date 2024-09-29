@@ -243,22 +243,38 @@ export function spollers() {
 			if (el.closest('summary') && el.closest('[data-spollers]')) {
 				e.preventDefault();
 				if (el.closest('[data-spollers]').classList.contains('_spoller-init')) {
-				const spollerTitle = el.closest('summary');
-				const spollerBlock = spollerTitle.closest('details');
-				const spollersBlock = spollerTitle.closest('[data-spollers]');
-				const oneSpoller = spollersBlock.hasAttribute('data-one-spoller');
-				const spollerSpeed = spollersBlock.dataset.spollersSpeed ? parseInt(spollersBlock.dataset.spollersSpeed) : 500;
-				if (!spollersBlock.querySelectorAll('._slide').length) {
-					if (oneSpoller && !spollerBlock.open) {
-						hideSpollersBody(spollersBlock);
+					const spollerTitle = el.closest('summary');
+					const spollerBlock = spollerTitle.closest('details');
+					const spollersBlock = spollerTitle.closest('[data-spollers]');
+					const oneSpoller = spollersBlock.hasAttribute('data-one-spoller');
+					const scrollSpoller = spollerBlock.hasAttribute('data-spoller-scroll');
+					const spollerSpeed = spollersBlock.dataset.spollersSpeed ? parseInt(spollersBlock.dataset.spollersSpeed) : 500;
+					if (!spollersBlock.querySelectorAll('._slide').length) {
+						if (oneSpoller && !spollerBlock.open) {
+							hideSpollersBody(spollersBlock);
+						}
+
+						!spollerBlock.open ? spollerBlock.open = true : setTimeout(() => { spollerBlock.open = false }, spollerSpeed);
+
+						spollerTitle.classList.toggle('_spoller-active');
+						_slideToggle(spollerTitle.nextElementSibling, spollerSpeed);
+
+						if (scrollSpoller && spollerTitle.classList.contains('_spoller-active')) {
+							const scrollSpollerValue = spollerBlock.dataset.spollerScroll;
+							const scrollSpollerOffset = +scrollSpollerValue ? +scrollSpollerValue : 0;
+							const scrollSpollerNoHeader = spollerBlock.hasAttribute('data-spoller-scroll-noheader') ? document.querySelector('.header').offsetHeight : 0;
+
+							//setTimeout(() => {
+							window.scrollTo(
+								{
+									top: spollerBlock.offsetTop - (scrollSpollerOffset + scrollSpollerNoHeader),
+									behavior: "smooth",
+								}
+							);
+							//}, spollerSpeed);
+						}
 					}
-
-					!spollerBlock.open ? spollerBlock.open = true : setTimeout(() => { spollerBlock.open = false }, spollerSpeed);
-
-					spollerTitle.classList.toggle('_spoller-active');
-					_slideToggle(spollerTitle.nextElementSibling, spollerSpeed);
 				}
-			}
 			}
 			// Закриття при кліку поза спойлером
 			if (!el.closest('[data-spollers]')) {

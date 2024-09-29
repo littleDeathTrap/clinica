@@ -34,7 +34,7 @@
 		"scope": "html",
 		"prefix": "showmore",
 		"body": [
-			"<div data-showmore class=\"${1:block}\">\n\t<div data-showmore-content class=\"${1:block}__content\"></div>\n\t<button hidden data-showmore-button type=\"button\" class=\"${1:block}__more\"><span>Показати ще</span><span>Скыть</span></button>\n</div>"
+			"<div data-showmore class=\"${1:block}\">\n\t<div data-showmore-content class=\"${1:block}__content\"></div>\n\t<button hidden data-showmore-button type=\"button\" class=\"${1:block}__more\"><span>Показати ще</span><span>Сховати</span></button>\n</div>"
 		],
 		"description": "Додає базовий HTML код блоку 'показати ще'"
 	},
@@ -57,7 +57,7 @@
 	"Quantity": {
 		"scope": "html",
 		"prefix": "quantity",
-		"body": "<div data-quantity class=\"quantity\">\n\t<button data-quantity-plus type=\"button\" class=\"quantity__button quantity__button_plus\"></button>\n\t<div class=\"quantity__input\">\n\t\t<input data-quantity-value autocomplete=\"off\" type=\"text\" name=\"form[]\" value=\"1\">\n\t</div>\n\t<button data-quantity-minus type=\"button\" class=\"quantity__button quantity__button_minus\"></button>\n</div>",
+		"body": "<div data-quantity class=\"quantity\">\n\t<button data-quantity-minus type=\"button\" class=\"quantity__button quantity__button_minus\"></button>\n\t<div class=\"quantity__input\">\n\t\t<input data-quantity-value autocomplete=\"off\" type=\"text\" name=\"form[]\" value=\"1\">\n\t</div>\n\t<button data-quantity-plus type=\"button\" class=\"quantity__button quantity__button_plus\"></button>\n</div>",
 		"description": "Додає HTML форми з кількістю"
 	},
 	"FullPage": {

@@ -12,8 +12,8 @@
 		will-change: transform;
 		transition: all 0.05s linear 0s;
 		position: fixed;
-		width: rem(50);
-		height: rem(50);
+		width: toRem(50);
+		height: toRem(50);
 		&::after {
 			content: "";
 			position: absolute;
@@ -35,8 +35,8 @@
 	}
 	&__pointer {
 		position: fixed;
-		width: rem(3);
-		height: rem(3);
+		width: toRem(3);
+		height: toRem(3);
 		top: 0;
 		left: 0;
 		&::after {

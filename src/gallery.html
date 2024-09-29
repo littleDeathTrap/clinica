@@ -1,235 +1,188 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  @@include('html/_head.htm',{ "title":"Gallery" })
-  <body>
-    <div class="wrapper">
-      @@include('html/_header.htm',{})
-      <main class="page-gallery">
-        <section class="page-gallery__hero hero">
-          <div class="hero__container">
-            <div
-              class="hero__section-header section-header section-header--center"
-            >
-              <h1
-                class="section-header__title section-header__title--big section-header__title--white"
-              >
-                Gallery
-              </h1>
-            </div>
-          </div>
-          <div class="hero__image-ibg">
-            <img src="@img/page-gallery/bg.jpg" alt="Image" />
-          </div>
-        </section>
-        <section class="page-gallery__hello hello">
-          <div class="hello__container">
-            <h2 class="hello__title">
-              Hello. Our Business has been present for over 20 years in City.
-            </h2>
-            <div class="hello__doctors doctors-hello">
-              <article class="doctors-hello__item">
-                <div class="doctors-hello__body">
-                  <h4 class="doctors-hello__title">Betty Stuart</h4>
-                  <div class="doctors-hello__position">DIRECTOR</div>
-                </div>
-                <div class="doctors-hello__image-ibg">
-                  <img src="@img/page-gallery/doc/01.jfif" alt="Image" />
-                </div>
-              </article>
-              <article class="doctors-hello__item">
-                <div class="doctors-hello__body">
-                  <h4 class="doctors-hello__title">Lucas Pine</h4>
-                  <div class="doctors-hello__position">COPARTNER</div>
-                </div>
-                <div class="doctors-hello__image-ibg">
-                  <img src="@img/page-gallery/doc/02.jfif" alt="Image" />
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
-        <div class="page-gallery__gallery gallery">
-          <div data-gallery class="gallery__container">
-            <a
-              href="@img/page-gallery/gallery/01.jfif"
-              class="gallery__item-ibg"
-            >
-              <img src="@img/page-gallery/gallery/01.jfif" alt="Image" />
-            </a>
-            <a
-              href="@img/page-gallery/gallery/02.jfif"
-              class="gallery__item-ibg"
-            >
-              <img src="@img/page-gallery/gallery/02.jfif" alt="Image" />
-            </a>
-            <a
-              href="@img/page-gallery/gallery/03.jpg"
-              class="gallery__item-ibg"
-            >
-              <img src="@img/page-gallery/gallery/03.jpg" alt="Image" />
-            </a>
-            <a
-              href="@img/page-gallery/gallery/04.jpg"
-              class="gallery__item-ibg"
-            >
-              <img src="@img/page-gallery/gallery/04.jpg" alt="Image" />
-            </a>
-            <a
-              href="@img/page-gallery/gallery/05.jpg"
-              class="gallery__item-ibg"
-            >
-              <img src="@img/page-gallery/gallery/05.jpg" alt="Image" />
-            </a>
-            <a
-              href="@img/page-gallery/gallery/06.jpg"
-              class="gallery__item-ibg"
-            >
-              <img src="@img/page-gallery/gallery/06.jpg" alt="Image" />
-            </a>
-            <a
-              href="@img/page-gallery/gallery/07.jpg"
-              class="gallery__item-ibg"
-            >
-              <img src="@img/page-gallery/gallery/07.jpg" alt="Image" />
-            </a>
-            <a
-              href="@img/page-gallery/gallery/08.jfif"
-              class="gallery__item-ibg"
-            >
-              <img src="@img/page-gallery/gallery/08.jfif" alt="Image" />
-            </a>
-          </div>
-        </div>
-        <div data-watch class="page-gallery__info info-gallery">
-          <div class="info-gallery__container">
-            <div class="info-gallery__item">
-              <div data-digits-counter class="info-gallery__value">12</div>
-              <div class="info-gallery__body">
-                <div class="info-gallery__title">Products</div>
-                <div class="info-gallery__text">Dolor Sit Amett</div>
-              </div>
-            </div>
-            <div class="info-gallery__item">
-              <div data-digits-counter class="info-gallery__value">45</div>
-              <div class="info-gallery__body">
-                <div class="info-gallery__title">Workers</div>
-                <div class="info-gallery__text">Dolor Sit Amett</div>
-              </div>
-            </div>
-            <div class="info-gallery__item">
-              <div data-digits-counter class="info-gallery__value">26</div>
-              <div class="info-gallery__body">
-                <div class="info-gallery__title">Creators</div>
-                <div class="info-gallery__text">Dolor Sit Amett</div>
-              </div>
-            </div>
-            <div class="info-gallery__item">
-              <div data-digits-counter class="info-gallery__value">78</div>
-              <div class="info-gallery__body">
-                <div class="info-gallery__title">Years</div>
-                <div class="info-gallery__text">Dolor Sit Amett</div>
-              </div>
-            </div>
-          </div>
-          <div class="info-gallery__image-ibg">
-            <img src="@img/page-gallery/info-bg.jpg" alt="Image" />
-          </div>
-        </div>
-        <div class="page-gallery__history history-gallery">
-          <div class="history-gallery__container">
-            <div class="history-gallery__body">
-              <div class="history-gallery__content">
-                <div class="history-gallery__section-header section-header">
-                  <div
-                    class="section-header__label section-header__label--blue">OUR HISTORY
-                  </div>
-                  <h2 class="section-header__title">
-                    The origin of the Business
-                  </h2>
-                  <div class="section-header__text section-header__text--left text">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Phasellus et metus augue. Mauris ut libero eget erat
-                      scelerisque vehicula. Phasellus nec blandit metus. Nulla
-                      quis molestie risus.
-                    </p>
-                  </div>
-                  <a href="#" class="section-header__button button">VIEW PRICES</a>
-                </div>
-              </div>
-              <div class="history-gallery__info info-history-gallery">
-                <div class="info-history-gallery__image-ibg">
-                   <img src="@img/page-gallery/history/info-history01.jpg" alt="Image">
-                </div>
-                <div class="info-history-gallery__stat stat-info-history">
-                  <div class="stat-info-history__item">
-                    <div class="stat-info-history__title">2+</div>
-                    <div class="stat-info-history__text">IDEA</div>
-                  </div>
-                  <div class="stat-info-history__item">
-                    <div class="stat-info-history__title">*8</div>
-                    <div class="stat-info-history__text">START</div>
-                  </div>
-                  <div class="stat-info-history__item">
-                    <div class="stat-info-history__title">3km</div>
-                    <div class="stat-info-history__text">SETTLING</div>
-                  </div>
-                  <div class="stat-info-history__item">
-                    <div class="stat-info-history__title">[17]</div>
-                    <div class="stat-info-history__text">SHOP</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="history-gallery__advantages advantages">
-              <div class="advantages__item">
-                <div class="advantages__icon">
-                  <img src="@img/advantages/03.png" alt="Icon" />
-                </div>
-                <div class="advantages__body">
-                  <h4 class="advantages__title">The Beginning</h4>
-                  <div class="advantages__text text">
-                    <p>
-                      Proin at varius arcu. Sed posuere orci bibendum pharetra
-                      dapibus.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="advantages__item">
-                <div class="advantages__icon">
-                  <img src="@img/advantages/02.png" alt="Icon" />
-                </div>
-                <div class="advantages__body">
-                  <h4 class="advantages__title">Production</h4>
-                  <div class="advantages__text text">
-                    <p>
-                      Proin at varius arcu. Sed posuere orci bibendum pharetra
-                      dapibus.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="advantages__item">
-                <div class="advantages__icon">
-                  <img src="@img/advantages/04.png" alt="Icon" />
-                </div>
-                <div class="advantages__body">
-                  <h4 class="advantages__title">Current Day</h4>
-                  <div class="advantages__text text">
-                    <p>
-                      Proin at varius arcu. Sed posuere orci bibendum pharetra
-                      dapibus.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </main>
-      @@include('html/_footer.htm',{})
-    </div>
-    @@include('html/_js.htm',{})
-  </body>
+	@@include('html/_head.htm',{
+	"title":"Gallery"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page-gallery">
+				<section class="page-gallery__hero hero">
+					<div class="hero__container">
+						<div class="hero__section-header section-header section-header--center">
+							<h1 class="section-header__title section-header__title--big section-header__title--white">Gallery</h1>
+						</div>
+					</div>
+					<div class="hero__image-ibg">
+						<img src="@img/page-gallery/bg.jpg" alt="Img">
+					</div>
+				</section>
+				<section class="page-gallery__hello hello">
+					<div class="hello__container">
+						<h2 class="hello__title">Hello. Our Business has been present for over 20 years in City.</h2>
+						<div class="hello__doctors doctors-hello">
+							<article class="doctors-hello__item">
+								<div class="doctors-hello__body">
+									<h4 class="doctors-hello__title">Betty Stuart</h4>
+									<div class="doctors-hello__position">DIRECTOR</div>
+								</div>
+								<div class="doctors-hello__image-ibg">
+									<img src="@img/page-gallery/doctors/01.jpg" alt="Image">
+								</div>
+							</article>
+							<article class="doctors-hello__item">
+								<div class="doctors-hello__body">
+									<h4 class="doctors-hello__title">Lucas Pine</h4>
+									<div class="doctors-hello__position">COPARTNER</div>
+								</div>
+								<div class="doctors-hello__image-ibg">
+									<img src="@img/page-gallery/doctors/02.jpg" alt="Image">
+								</div>
+							</article>
+						</div>
+					</div>
+				</section>
+				<div class="page-gallery__gallery gallery">
+					<div data-gallery class="gallery__container">
+						<a href="@img/gallery/01.jpg" class="gallery__item-ibg">
+							<img src="@img/gallery/01.jpg" alt="Image">
+						</a>
+						<a href="@img/gallery/02.jpg" class="gallery__item-ibg">
+							<img src="@img/gallery/02.jpg" alt="Image">
+						</a>
+						<a href="@img/gallery/03.jpg" class="gallery__item-ibg">
+							<img src="@img/gallery/03.jpg" alt="Image">
+						</a>
+						<a href="@img/gallery/04.jpg" class="gallery__item-ibg">
+							<img src="@img/gallery/04.jpg" alt="Image">
+						</a>
+						<a href="@img/gallery/05.jpg" class="gallery__item-ibg">
+							<img src="@img/gallery/05.jpg" alt="Image">
+						</a>
+						<a href="@img/gallery/06.jpg" class="gallery__item-ibg">
+							<img src="@img/gallery/06.jpg" alt="Image">
+						</a>
+						<a href="@img/gallery/07.jpg" class="gallery__item-ibg">
+							<img src="@img/gallery/07.jpg" alt="Image">
+						</a>
+						<a href="@img/gallery/08.jpg" class="gallery__item-ibg">
+							<img src="@img/gallery/08.jpg" alt="Image">
+						</a>
+					</div>
+				</div>
+				<div data-watch class="page-gallery__info info-gallery">
+					<div class="info-gallery__container">
+						<div class="info-gallery__item">
+							<div data-digits-counter class="info-gallery__value">12</div>
+							<div class="info-gallery__body">
+								<div class="info-gallery__title">Products</div>
+								<div class="info-gallery__text">Dolor Sit Amet</div>
+							</div>
+						</div>
+						<div class="info-gallery__item">
+							<div data-digits-counter class="info-gallery__value">45</div>
+							<div class="info-gallery__body">
+								<div class="info-gallery__title">Workers</div>
+								<div class="info-gallery__text">Dolor Sit Amet</div>
+							</div>
+						</div>
+						<div class="info-gallery__item">
+							<div data-digits-counter class="info-gallery__value">26</div>
+							<div class="info-gallery__body">
+								<div class="info-gallery__title">Creators</div>
+								<div class="info-gallery__text">Dolor Sit Amet</div>
+							</div>
+						</div>
+						<div class="info-gallery__item">
+							<div data-digits-counter class="info-gallery__value">78</div>
+							<div class="info-gallery__body">
+								<div class="info-gallery__title">Years</div>
+								<div class="info-gallery__text">Dolor Sit Amet</div>
+							</div>
+						</div>
+					</div>
+					<div class="info-gallery__image-ibg">
+						<img src="@img/page-gallery/info-bg.jpg" alt="Image">
+					</div>
+				</div>
+				<div class="page-gallery__history history-gallery">
+					<div class="history-gallery__container">
+						<div class="history-gallery__body">
+							<div class="history-gallery__content">
+								<div class="history-gallery__section-header section-header">
+									<div class="section-header__label section-header__label--blue">OUR HISTORY</div>
+									<h2 class="section-header__title">The origin of the Business</h2>
+									<div class="section-header__text section-header__text--left text">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et metus augue. Mauris ut libero eget erat scelerisque vehicula. Phasellus nec blandit metus. Nulla quis molestie risus.</p>
+									</div>
+									<a href="#" class="section-header__button button">VIEW PRICES</a>
+								</div>
+							</div>
+							<div class="history-gallery__info info-history-gallery">
+								<div class="info-history-gallery__image-ibg">
+									<img src="@img/page-gallery/history/01.jpg" alt="Image">
+								</div>
+								<div class="info-history-gallery__stat stat-info-history">
+									<div class="stat-info-history__item">
+										<div class="stat-info-history__title">2+</div>
+										<div class="stat-info-history__text">IDEA</div>
+									</div>
+									<div class="stat-info-history__item">
+										<div class="stat-info-history__title">*8</div>
+										<div class="stat-info-history__text">START</div>
+									</div>
+									<div class="stat-info-history__item">
+										<div class="stat-info-history__title">3km</div>
+										<div class="stat-info-history__text">SETTLING</div>
+									</div>
+									<div class="stat-info-history__item">
+										<div class="stat-info-history__title">[17]</div>
+										<div class="stat-info-history__text">Shop</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="history-gallery__advantages advantages">
+							<div class="advantages__item">
+								<div class="advantages__icon">
+									<img src="@img/advantages/03.png" alt="Icon">
+								</div>
+								<div class="advantages__body">
+									<h4 class="advantages__title">The Beginning</h4>
+									<div class="advantages__text text">
+										<p>Proin at varius arcu sed.</p>
+									</div>
+								</div>
+							</div>
+							<div class="advantages__item">
+								<div class="advantages__icon">
+									<img src="@img/advantages/02.png" alt="Icon">
+								</div>
+								<div class="advantages__body">
+									<h4 class="advantages__title">Production</h4>
+									<div class="advantages__text text">
+										<p>Proin at varius arcu sed.</p>
+									</div>
+								</div>
+							</div>
+							<div class="advantages__item">
+								<div class="advantages__icon">
+									<img src="@img/advantages/06.png" alt="Icon">
+								</div>
+								<div class="advantages__body">
+									<h4 class="advantages__title">Current Day</h4>
+									<div class="advantages__text text">
+										<p>Proin at varius arcu sed.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
 </html>
